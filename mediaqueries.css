@@ -1,18 +1,33 @@
 @media screen and (max-width: 1400px) {
-  #profile { height: 83vh; margin-bottom: 6rem; }
-  .about-containers { flex-wrap: wrap; }
-  #contact, #projects { height: fit-content; }
+  #profile { 
+    height: 83vh; 
+    margin-bottom: 6rem; 
+  }
+  .about-containers { 
+    flex-wrap: wrap; 
+  }
+  #contact, #projects { 
+    height: fit-content; 
+  }
 }
 
 @media screen and (max-width: 1200px) {
   #desktop-nav { display: none; }
   #hamburger-nav { display: flex; }
+
   #experience, .experience-details-container { margin-top: 2rem; }
   #profile, .section-container { display: block; }
   .arrow { display: none; }
+
   section, .section-container { height: fit-content; }
   section { margin: 0 5%; }
-  .section__pic-container { width: 275px; height: 275px; margin: 0 auto 2rem; }
+
+  .section__pic-container { 
+    width: 275px; 
+    height: 275px; 
+    margin: 0 auto 2rem; 
+  }
+
   .about-containers { margin-top: 0; }
 }
 
@@ -20,26 +35,96 @@
   #contact, footer { height: auto; }
   #profile { height: auto; margin-bottom: 2rem; }
   article { font-size: 1rem; }
-  footer nav { height: fit-content; margin-bottom: 2rem; }
-  .about-containers, .contact-info-upper-container, .btn-container { flex-wrap: wrap; }
+
+  footer nav { 
+    height: fit-content; 
+    margin-bottom: 2rem; 
+  }
+
+  .about-containers, 
+  .contact-info-upper-container, 
+  .btn-container { flex-wrap: wrap; }
+
   .contact-info-container { margin: 0; }
   .contact-info-container p, .nav-links li a { font-size: 1rem; }
   .experience-sub-title { font-size: 1.25rem; }
   .logo { font-size: 1.5rem; }
-  .nav-links { flex-direction: column; gap: 0.5rem; text-align: center; }
-  .section__pic-container { width: auto; height: 46vw; justify-content: center; }
+
+  .nav-links { 
+    flex-direction: column; 
+    gap: 0.5rem; 
+    text-align: center; 
+  }
+
+  .section__pic-container { 
+    width: auto; 
+    height: 46vw; 
+    justify-content: center; 
+  }
+
   .section__text__p2 { font-size: 1.25rem; }
   .title { font-size: 2rem; }
   .text-container { text-align: justify; }
 
-  .btn { width: 12rem; padding: 1.2rem; font-size: 1rem; border-radius: 3rem; }
+  /* Bigger buttons for mobile */
+  .btn { 
+    width: 12rem; 
+    padding: 1.2rem; 
+    font-size: 1rem; 
+    border-radius: 3rem; 
+  }
 
-  .details-container { flex: 1 1 100%; min-height: 180px; }
+  /* Role & Education same height */
+  .details-container { 
+    flex: 1 1 100%; 
+    min-height: 180px; 
+  }
 
+  /* Experience Section Fix */
+  #experience .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  #experience .details-container {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  #experience .article-container {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  #experience article {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  #experience article div {
+    flex: 1;
+    min-width: 0;
+  }
+
+  #experience h3, 
+  #experience p {
+    font-size: 0.95rem;
+    word-wrap: break-word;
+  }
+
+  /* Projects Section Fix */
   #projects .about-containers {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+    width: 100%;
   }
 
   #projects .color-container {
